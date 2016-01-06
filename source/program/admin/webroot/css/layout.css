@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+/*-----------------------------------------------------------
+index:
+	Box Model
+	Header
+	Footer
+	Global Nav
+	Topic Path
+	System Error
+	Only Admin Top
+	2Columns Frame
+-----------------------------------------------------------*/
+
+/* Box Model
+---------------------------------------------------- */
+body {
+	padding-bottom: 20px;
+}
+#layout,
+#globalNav {
+	width: expression(document.body.clientWidth < 966? "960px" : "auto");
+	min-width: 960px;
+}
+#container {
+	padding: 30px 10px 40px 10px;
+	background: url(/admin//img/bg_main.gif) top left repeat-x;
+}
+#contents {
+}
+#header {
+	height: 63px;
+	border-bottom: 1px solid #0099FF;
+	background: url(/admin//img/bg_header.gif) top left repeat-x;
+}
+#footer {
+	padding-top: 28px;
+	border-top: 1px solid #B1C9D7;
+	background: url(/admin//img/bg_footer.gif) top left repeat-x;
+}
+#globalNav {
+	height: 34px;
+	background: #00468C;
+}
+#topicPath {
+}
+
+/* Header
+---------------------------------------------------- */
+#header h1 {
+	float: left;
+	height: 63px;
+	width: 298px;
+}
+#header #headerTool {
+	float: right;
+	width: 267px;
+}
+#header #nowDate {
+	height: 23px;
+	width: 267px;
+	background: url(/admin//img/bg_powerdby.gif) top left no-repeat;
+}
+#header #nowDate p {
+	padding: 6px 0 0 45px;
+	margin: 0;
+	font-size: 10px;
+	color: #C2D4DD;
+	line-height: 11px;
+}
+#header #toolNav {
+	height: 21px;
+	margin: 8px 0 0 40px;
+}
+#header #toolNav ul {
+	margin: 0;
+}
+#header #toolNav li {
+	float: left;
+	margin: 0;
+	coler: #FFFFFF;
+	font-size: 10px;
+	line-height: 15px;
+	list-style: none;
+}
+#header #toolNav li a {
+	color: #FFFFFF;
+}
+#header #toolNav li.admin {
+	height: 16px;
+	padding: 3px 15px 0 20px;
+	color: #FFFFFF;
+	background: url(/admin//img/icon/admin.gif) left center no-repeat;
+}
+#header #toolNav li.help {
+	height: 16px;
+	padding: 3px 15px 0 20px;
+	background: url(/admin//img/icon/help.gif) left center no-repeat;
+}
+#header #toolNav li.logout {
+	height: 21px;
+	width: 77px;
+}
+
+/* Footer
+---------------------------------------------------- */
+#footer p {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 1;
+	text-align: center;
+}
+#footer p#logo-hitmall {
+	margin-top: 15px;
+}
+
+/* Global Nav
+---------------------------------------------------- */
+#globalNav ul,
+#globalNav li {
+	margin: 0;
+	list-style: none;
+}
+#globalNav ul {
+	padding-left: 20px;
+}
+#globalNav ul li {
+	position: relative;
+	float: left;
+}
+#globalNav ul li a {
+	padding: 4px 27px 0 25px;
+	color: #C2D4DD;
+	line-height: 30px;
+	text-decoration: none;
+	display: block;
+	background: url(/admin//img/bg_globalnav.gif) top right no-repeat;
+}
+#globalNav ul li.over a {
+	color: #37454E;
+	background: url(/admin//img/bg_globalnav_ov.gif) 0 0 repeat-x;
+}
+#globalNav ul li.on a {
+	color: #37454E;
+	background: url(/admin//img/bg_globalnav_o.gif) 0 0 repeat-x;
+}
+#globalNav ul li ul {
+	position: absolute;
+	left: 0;
+	padding: 0 0 2px 0;
+	visibility: hidden;
+	z-index: 100;
+	background: url(/admin//img/bg_accordion_bt.gif) left bottom repeat-x;
+}
+#globalNav ul li ul li {
+	float: none;
+	display: list-item;
+}
+#globalNav ul li ul li a {
+	width: 142px;
+	padding: 0 0 0 20px;
+	color: #2C5267;
+	line-height: 28px;
+	display: block;
+	background: url(/admin//img/bg_accordion.gif) 0 0 no-repeat !important;
+}
+#globalNav ul li ul li a:hover {
+	color: #000000;
+	background: url(/admin//img/bg_accordion_o.gif) 0 0 no-repeat !important;
+}
+
+/* Local Nav
+---------------------------------------------------- */
+#localNav {
+	padding-bottom: 188px;
+	background: url(/admin//img/localnav_bt.gif) left bottom no-repeat;
+}
+#localNav ul,
+#localNav li {
+	margin: 0;
+	list-style: none;
+}
+#localNav li {
+	display: inline;
+}
+#localNav li a {
+	padding: 15px 5px 14px 22px;
+	line-height: 1.1;
+	display: block;
+	background: url(/admin//img/bg_localnav.gif) 0 0 no-repeat;
+}
+#localNav li a:hover,
+#localNav li.on a {
+	background: url(/admin//img/bg_localnav_o.gif) 0 0 no-repeat;
+}
+
+/* Local Sub Nav
+---------------------------------------------------- */
+#localSubNav {
+	padding: 6px 5px 0 5px;
+	margin-bottom: 20px;
+	background: url(/admin//img/bg_localsubnav.gif) 0 0 repeat-x;
+}
+#localSubNav ul,
+#localSubNav li {
+	margin: 0;
+}
+#localSubNav li {
+	float: left;
+	padding: 0 8px;
+	margin-right: 10px;
+	border: 1px solid #999999;
+	line-height: 27px;
+	background: #B1C9D7;
+	list-style: none;
+}
+#localSubNav li a {
+	color: #FFFFFF;
+}
+#localSubNav li.on {
+	border-bottom: 1px solid #FFFFFF;
+	background: #FFFFFF;
+}
+#localSubNav li.on a {
+	color: #0E7FC7;
+}
+
+/* Topic Path
+---------------------------------------------------- */
+
+/* System Error
+---------------------------------------------------- */
+
+/* Only Admin Top
+---------------------------------------------------- */
+#admin-top {
+	width: 100%;
+}
+#admin-top #mainContents,
+#admin-top #sideBar {
+	vertical-align: top;
+}
+#admin-top #oftenUsed {
+	width: 328px;
+	padding: 14px 11px;
+	background: url(/admin//img/bg_oftenused.gif) 0 0 no-repeat;
+}
+#admin-top #oftenUsed h4 {
+	margin: 0;
+	border: none;
+}
+#admin-top #oftenUsed ul,
+#admin-top #oftenUsed li {
+	margin: 0;
+	list-style: none;
+}
+#admin-top #oftenUsed ul {
+	margin: 0 9px;
+}
+#admin-top #oftenUsed li {
+	float: left;
+	width: 140px;
+	padding-left: 13px;
+	margin: 14px 0 0 0;
+	background: url(/admin//img/icon/arrow_3.gif) 0 3px no-repeat;
+}
+#admin-top #sideBar {
+	width: 250px;
+	padding: 20px 0 0 24px;
+}
+#admin-top #rightMenu {
+	background: #E2EAF0;
+}
+#admin-top #rightMenu h2 {
+	padding: 5px 0 12px 0;
+	margin: 0 15px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #587788;
+	line-height: normal;
+	background: none;
+}
+#admin-top #rightMenu h3 {
+	padding: 0 9px;
+	margin: 0 15px;
+	border: none;
+	color: #FFFFFF;
+	line-height: 26px;
+	background: url(/admin//img/rightmenu_h3.gif) 0 0 no-repeat;
+}
+#admin-top #rightMenu h4 {
+	border-bottom: 1px solid #829BAC;
+	line-height: 19px;
+}
+#admin-top #rightMenu ul,
+#admin-top #rightMenu li {
+	margin: 0;
+	list-style: none;
+}
+#admin-top #rightMenu #tp {
+	height: 13px;
+	background: url(/admin//img/rightmenu_tp.gif) 0 0 no-repeat;
+}
+#admin-top #rightMenu #bt {
+	height: 13px;
+	background: url(/admin//img/rightmenu_bt.gif) 0 0 no-repeat;
+}
+/*
+#admin-top #rightMenu #shortCut {
+	padding: 0 10px;
+	margin-bottom: 25px;
+	background: url(rightmenu_sc.gif) 0 0 repeat-x;
+}
+#admin-top #rightMenu #shortCut li {
+	line-height: 37px;
+	display: inline;
+}
+*/
+#admin-top #rightMenu div.shopInfo {
+	padding: 10px 20px 10px 12px;
+	margin: 0 15px;
+	background: url(/admin//img/rightmenu_si_bg.gif) 0 0 repeat-x;
+}
+#admin-top #rightMenu div.shopInfo ul {
+	margin: 0;
+}
+#admin-top #rightMenu div.shopInfo ol {
+	margin: 10px 0 15px 0;
+}
+#admin-top #rightMenu div.shopInfo ul li {
+	padding-left: 13px;
+	margin: 5px 0;
+	line-height: 1.5;
+	background: url(/admin//img/icon/arrow_2.gif) 0 5px no-repeat;
+}
+#admin-top #rightMenu div.shopInfo ol li {
+	padding-left: 18px;
+	margin: 5px 0;
+	line-height: 1.5;
+}
+#admin-top #rightMenu div.shopInfo ol li.no1 {
+	background: url(/admin//img/icon/no_1.gif) 0 3px no-repeat;
+}
+#admin-top #rightMenu div.shopInfo ol li.no2 {
+	background: url(/admin//img/icon/no_2.gif) 0 3px no-repeat;
+}
+#admin-top #rightMenu div.shopInfo ol li.no3 {
+	background: url(/admin//img/icon/no_3.gif) 0 3px no-repeat;
+}
+
+/* 2Columns Frame
+---------------------------------------------------- */
+#col2Frame {
+
+	width: 100%;
+}
+#col2Frame #mainContents,
+#col2Frame #sideBar {
+	vertical-align: top;
+}
+#col2Frame #sideBar {
+	width: 160px;
+	padding-right: 15px;
+	white-space: nowrap;
+}
+#col2Frame #sideBar h3 {
+	padding: 8px 10px 15px 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: normal;
+	background: url(/admin//img/localnav_tp.gif) 0 0 no-repeat;
+}

@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2009-09-14
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+/*-----------------------------------------------------------
+index:
+	Tags
+	Button
+	Folder Tree
+	Carender
+-----------------------------------------------------------*/
+
+/* Tags
+---------------------------------------------------- */
+/*
+table input,
+table select {
+	font-size: 12px;
+}
+*/
+input,
+select,
+option {
+	font-size: 12px;
+}
+textarea {
+	font-size: 12px;
+}
+input.w20 {
+	width: 20px;
+}
+input.w40 {
+	width: 40px;
+}
+input.w60 {
+	width: 60px;
+}
+input.w80 {
+	width: 80px;
+}
+input.w100 {
+	width: 100px;
+}
+input.w140 {
+	width: 140px;
+}
+input.w200 {
+	width: 200px;
+}
+textarea.w200 {
+	width: 200px;
+}
+textarea.w300 {
+	width: 300px;
+}
+textarea.w400 {
+	width: 400px;
+}
+textarea.w500 {
+	width: 500px;
+}
+textarea.w600 {
+	width: 600px;
+}
+input.textField {
+	padding: 2px;
+	border: 1px solid #444444;
+}
+#table dl.form {
+	padding: 0.3em 0 0 0;
+	margin: 0 0 0 0;
+}
+#container dl.form dt {
+	float: left;
+	width: 4.3em;
+	padding: 0.5em 0 0 0;
+	margin: 0;
+	color: #333;
+}
+#container dl.form dd {
+	padding: 0.1em 0em;
+	margin: 0 0 0 4.5em;
+}
+#container dl.layout2 dt {
+	width: 3.2em;
+}
+#container dl.layout2 dd {
+	margin: 0 0 0 3.4em;
+}
+#container dl.form dt,
+#container dl.form dd,
+#container label {
+	font-size: 12px;
+}
+
+input[type="text"] {
+font-size: 12px;
+}
+
+/* Button
+---------------------------------------------------- */
+.buttons1 {
+	padding: 15px 0;
+	margin-top: 30px;
+	text-align: center;
+	background: #E2EAF0;
+}
+.buttons1 input {
+	margin: 0 10px !important;
+}
+
+input[type="submit"] {
+font-size: 12px;
+}
+input[type="button"] {
+font-size: 12px;
+}
+
+/* Folder Tree
+---------------------------------------------------- */
+.treeview,
+.treeview ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.treeview ul {
+	margin-top: 4px;
+	background-color: white;
+}
+.treeview li {
+	padding: 0 0 0 20px;
+	margin: 0;
+	font-size: 12px;
+}
+.treeview a.selected {
+	background-color: #eee;
+}
+#treecontrol {
+	margin: 1em 0;
+	display: none;
+}
+.treeview .hover {
+	background-color: #BBDDFF !important;
+	cursor: pointer;
+}
+.treeview li.collapsable,
+.treeview li.expandable {
+	background-position: 0 -176px;
+}
+.treeview .expandable-hitarea {
+	background-position: -80px -3px;
+}
+.treeview li.last {
+	background-position: 0 -1766px
+}
+.treeview li.lastCollapsable, .treeview li.lastExpandable {
+	background-image: url(/admin//img/icon/treeview-default.gif);
+}
+.treeview li.lastCollapsable {
+	background-position: 0 -111px;
+}
+.treeview li.lastExpandable {
+	background-position: -32px -67px;
+}
+.treeview div.lastCollapsable-hitarea,
+.treeview div.lastExpandable-hitarea {
+	background-position: 0;
+}
+.filetree li {
+	padding: 0 0 0 20px;
+	line-height: 18px;
+}
+.filetree span.folder,
+.filetree span.file {
+	padding: 1px 0 1px 20px;
+	display: block;
+}
+.filetree span.folder {
+	background: url(/admin//img/icon/tree_dir_o.png) 0 0 no-repeat;
+}
+.filetree li.expandable span.folder {
+	background: url(/admin//img/icon/tree_dir.png) 0 0 no-repeat;
+}
+.filetree span.file {
+	background: url(/admin//img/icon/tree_file.png) 0 0 no-repeat;
+}
+
+/* Calender
+---------------------------------------------------- */
+/* Main Style Sheet for jQuery UI date picker */
+#ui-datepicker-div,
+.ui-datepicker-inline {
+	width: 200px;
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	background: #ddd;
+}
+#ui-datepicker-div {
+	d\\isplay: none;
+	border: 1px solid #999999;
+	z-index: 100; /*must have*/
+}
+.ui-datepicker-inline {
+	float: left;
+	border: 0;
+	display: block;
+}
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-dialog {
+	padding: 5px !important;
+	border: 4px ridge #ddd !important;
+}
+.ui-datepicker-disabled {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.5;
+}
+button.ui-datepicker-trigger {
+	width: 25px;
+}
+img.ui-datepicker-trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+.ui-datepicker-prompt {
+	float: left;
+	padding: 2px;
+	color: #000;
+	background: #ddd;
+}
+* html .ui-datepicker-prompt {
+	width: 185px;
+}
+.ui-datepicker-control,
+.ui-datepicker-links,
+.ui-datepicker-header,
+.ui-datepicker {
+	float: left;
+	clear: both;
+	width: 100%;
+	color: #000000;
+}
+.ui-datepicker-control {
+	padding: 2px 0px;
+	background: #EEF4F9;
+}
+.ui-datepicker-links {
+	padding: 2px 0px;
+	background: #B1C9D7;
+}
+.ui-datepicker-control,
+.ui-datepicker-links {
+	font-size: 80%;
+	font-weight: bold;
+}
+.ui-datepicker-links label { /* disabled links */
+	padding: 2px 5px;
+	color: #888;
+}
+.ui-datepicker-clear,
+.ui-datepicker-prev {
+	float: left;
+	width: 34%;
+}
+.ui-datepicker-rtl .ui-datepicker-clear,
+.ui-datepicker-rtl .ui-datepicker-prev {
+	float: right;
+	text-align: right;
+}
+.ui-datepicker-current {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.ui-datepicker-close,
+.ui-datepicker-next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+.ui-datepicker-rtl .ui-datepicker-close,
+.ui-datepicker-rtl .ui-datepicker-next {
+	float: left;
+	text-align: left;
+}
+.ui-datepicker-header {
+	height: 1.3em;
+	padding: 1px 0 3px;
+	font-weight: bold;
+	text-align: center;
+	background: #EEF4F9;
+}
+.ui-datepicker-header select,
+.ui-datepicker-header select option {
+	border: 0px;
+	font-weight: bold;
+	color: #333333;
+	background: #EEF4F9;
+}
+.ui-datepicker {
+	font-size: 100%;
+	text-align: center;
+	background: #ccc;
+}
+.ui-datepicker th,
+.ui-datepicker td {
+	padding: 2px 5px;
+}
+.ui-datepicker a {
+	width: 100%;
+	display: block;
+}
+.ui-datepicker-title-row {
+	background: #777;
+}
+.ui-datepicker-days-row {
+	color: #666;
+	background: #eee;
+}
+.ui-datepicker-week-col {
+	color: #FFFFFF;
+	background: #777;
+}
+.ui-datepicker-days-cell {
+	border: 1px solid #ddd;
+	color: #000;
+}
+.ui-datepicker-days-cell a {
+	display: block;
+}
+.ui-datepicker-week-end-cell {
+	background: #ddd;
+}
+.ui-datepicker-title-row
+.ui-datepicker-week-end-cell {
+	background: #777;
+}
+.ui-datepicker-days-cell-over {
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+.ui-datepicker-unselectable {
+	color: #888;
+}
+.ui-datepicker-today {
+	background: #fcc !important;
+}
+.ui-datepicker-current-day {
+	background: #999 !important;
+}
+.ui-datepicker-status {
+	width: 100%;
+	font-size: 80%;
+	text-align: center;
+	background: #ddd;
+}
+/* ________ Datepicker Links _______
+** Reset link properties and then override them with !important */
+#ui-datepicker-div a, .ui-datepicker-inline a {
+	padding: 0;
+	margin: 0;
+	color: #000;
+	background: none;
+	cursor: pointer;
+}
+.ui-datepicker-inline .ui-datepicker-links a {
+	padding: 0 5px !important;
+}
+.ui-datepicker-control a,
+.ui-datepicker-links a {
+	padding: 2px 5px !important;
+	color: #000000 !important;
+}
+.ui-datepicker-title-row a {
+	color: #eee !important;
+}
+.ui-datepicker-control a:hover {
+	color: #333 !important;
+	background: #fdd !important;
+}
+.ui-datepicker-links a:hover,
+.ui-datepicker-title-row a:hover {
+	color: #333 !important;
+	background: #ddd !important;
+}
+/* ___________ MULTIPLE MONTHS _________*/
+.ui-datepicker-multi .ui-datepicker {
+	border: 1px solid #777;
+}
+.ui-datepicker-one-month {
+	float: left;
+	width: 185px;
+}
+.ui-datepicker-new-row {
+	clear: left;
+}
+/* ___________ IE6 IFRAME FIX ________ */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+.error_message {
+	margin: 0;
+	padding: 0;
+	color: #FF0000;
+	line-height: 1.1;
+}

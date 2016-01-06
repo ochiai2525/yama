@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+/* CSS Import Style
+---------------------------------------------------- */
+@import "format.css";
+@import "layout.css";
+@import "common.css";
+@import "table.css";
+@import "system_custom.css";

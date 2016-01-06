@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2009-09-14
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+/*-----------------------------------------------------------
+index:
+	Commmon
+	Actions
+	Massaction
+	Data List Table 1
+	Data List Table 2
+	Data List Table 3
+	Page Nation
+	Search Condition Table
+	Store Status Table
+	Sub Table 1
+	Sub Table 2
+-----------------------------------------------------------*/
+
+/* Common
+---------------------------------------------------- */
+.fullwidth {
+	width: 100%;
+}
+.price {
+	text-align: right !important;
+}
+tr.stripe td {
+	background: #EEF4F9 !important;
+}
+tr.over td {
+	background: #FCF5DD !important;
+}
+
+/* Actions
+---------------------------------------------------- */
+table.actions {
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+/* Massaction
+---------------------------------------------------- */
+table.massaction {
+	width: 100% !important;
+	border: 1px solid #999999 !important;
+	background: #768E9D !important;
+}
+table.massaction td {
+	padding: 8px !important;
+	border: none !important;
+	line-height: 24px !important;
+	background: none !important;
+}
+table.massaction td,
+table.massaction td a {
+	font-size: 10px !important;
+	font-weight: bold !important;
+	color: #FFFFFF !important;
+}
+
+/* Data List Table 1 and 2
+---------------------------------------------------- */
+table.dataListTable1 {
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+table.dataListTable2 {
+	border: 1px solid #999999;
+}
+table.dataListTable1 th,
+table.dataListTable2 th {
+	padding: 7px 5px;
+	border-right: 1px solid #C9D9E3;
+	border-bottom: 1px solid #556E7F;
+	font-size: 10px;
+	font-weight: normal;
+	background: #B1C9D7;
+}
+table.dataListTable1 td,
+table.dataListTable2 td {
+	padding: 5px;
+	border-right: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+	line-height: 1.3;
+	text-align: center;
+}
+table.dataListTable1 td.check,
+table.dataListTable2 td.check {
+	width: 18px;
+}
+table.dataListTable1 tr.total td,
+table.dataListTable2 tr.total td {
+	background: #FFFFF1;
+}
+table.dataListTable1 tr.totalPrice th,
+table.dataListTable1 tr.totalPrice td,
+table.dataListTable2 tr.totalPrice th,
+table.dataListTable2 tr.totalPrice td {
+	font-size: 14px;
+	font-weight: bold;
+	background: #FFF1F1;
+}
+table.dataListTable1 tr.total td.detail,
+table.dataListTable1 tr.totalPrice td.detail,
+table.dataListTable2 tr.total td.detail,
+table.dataListTable2 tr.totalPrice td.detail {
+	text-align: right;
+}
+
+table.dataListTable2 span {
+	color: #FF0000;
+}
+
+table.dataListTable2 tr.cancel {
+	background: #C0C0C0;
+}
+table.dataListTable2 tr.news_before {
+	background: #FFCCFF;
+}
+table.dataListTable2 tr.news_end {
+	background: #DDDDDD;
+}
+table.dataListTable2 td.news_before {
+	background: #FFCCFF;
+}
+table.dataListTable2 td.news_end {
+	background: #DDDDDD;
+}
+
+/* Data List Table 3
+---------------------------------------------------- */
+table.dataListTable3 {
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+table.dataListTable3 th {
+	padding: 7px 6px 5px 6px;
+	border-right: #C9D9E3 solid 1px;
+	border-bottom: #C9D9E3 solid 1px;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	background: #B1C9D7;
+}
+table.dataListTable3 td {
+	padding: 6px 5px 5px 5px;
+	border-right: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+	line-height: 1.3;
+	text-align: right;
+	background: #FFFFFF;
+}
+table.dataListTable3 td.total {
+	background: #FFFFF1;
+}
+table.dataListTable3 tr.total td.total {
+	background: #FFF6D1;
+}
+table.dataListTable3 td.name {
+	text-align: left;
+	background: #D8EBF9;
+}
+table.dataListTable3 td.totalAll {
+	background: #FEE3D7;
+}
+
+/* Page Nation
+---------------------------------------------------- */
+table.pageNation {
+	width: 100%;
+	margin-top: 10px;
+}
+table.pageNation td {
+	line-height: normal;
+	text-align: right;
+}
+table.pageNation span,
+table.pageNation a.num {
+	padding: 2px 4px;
+	border: 1px solid #999999;
+	zoom: 100%;
+}
+table.pageNation span {
+	color: #FFFFFF;
+	background: #768E9D;
+}
+table.pageNation a.num {
+	color: #0E7FC7;
+	text-decoration: none;
+}
+table.pageNation a.num:hover {
+	background: #EEF4F9;
+}
+
+/* Search Table
+---------------------------------------------------- */
+table.searchTable {
+	border: 1px solid #999999;
+}
+table.searchTable th {
+	background: #C1D4DF url(/admin//img/table/th_13.gif) left bottom repeat-x;
+	padding: 7px 8px;
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+table.searchTable td {
+	background: #EEF4F9 url(/admin//img/table/td_3.gif) top repeat-x;
+	padding: 7px 8px;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+table.searchTable td table {
+	background: #B1C9D7;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #566E7F;
+	border-collapse: collapse;
+}
+/* Search Condition Table
+---------------------------------------------------- */
+table.searchConditionTable {
+	border: 1px solid #999999;
+}
+table.searchConditionTable tfoot td {
+	padding: 6px;
+}
+table.searchConditionTable thead {
+	background: #71A7C4 url(/admin//img/table/th_13.gif) left bottom repeat-x;
+}
+table.searchConditionTable thead th {
+	padding: 7px 8px;
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+table.searchConditionTable tbody {
+	background: #EEF4F9 url(/admin//img/table/td_3.gif) top repeat-x;
+}
+table.searchConditionTable tbody td {
+	padding: 7px 6px;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+table.searchConditionTable tfoot {
+	background: #71A7C4;
+}
+table.searchConditionTable tfoot td.button {
+	text-align: center;
+}
+table.searchConditionTable tfoot table {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #566E7F;
+	border-collapse: collapse;
+}
+table.searchConditionTable tfoot table th,
+table.searchConditionTable tfoot table td {
+	padding: 5px 10px;
+}
+table.searchConditionTable tfoot table th {
+	background: #D8E4EB;
+}
+table.searchConditionTable tfoot table td {
+	border: none;
+	background: #FFFFFF;
+}
+
+
+/* Search Condition Table 2
+---------------------------------------------------- */
+table.searchConditionTable2 {
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+table.searchConditionTable2 select {
+	width: 110px;
+	font-size: 1em;
+}
+table.searchConditionTable2 th {
+	width: 90px;
+	padding: 8px 0.8em 6px 0.8em;
+	border-bottom: #C9D9E3 solid 1px;
+	font-size: 12px;
+	color: #27343C;
+	text-align: left;
+	background: #71A7C4;
+}
+table.searchConditionTable2 td {
+	padding: 8px 0.8em 6px 0.8em;
+	border-bottom: #AEEFFD solid 1px;
+	font-size: 12px;
+	color: #000000;
+	background: #EEF4F9 url(/admin//img/table/td_3.gif) top repeat-x;
+}
+table.searchConditionTable2 td.option {
+	padding: 6px;
+	border: none;
+	background: #B1C9D7;
+}
+table.searchConditionTable2 td table td {
+	padding: 0;
+	border: none;
+	background: none;
+}
+table.searchConditionTable2 td.button {
+	text-align: center;
+}
+table.searchConditionTable2 td.option table {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #415361;
+	border-collapse: collapse;
+}
+table.searchConditionTable2 td.option table th,
+table.searchConditionTable2 td.option table td {
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+table.searchConditionTable2 td.option table th {
+	border: none;
+	background: #D8E4EB;
+}
+table.searchConditionTable2 td.option table td {
+	border: none;
+	background: #FFFFFF;
+}
+
+/* Behavior Table
+---------------------------------------------------- */
+#behaviorTable {
+	padding: 8px 10px;
+	margin: 5px 0 0 0;
+	border: 1px solid #999999;
+	background: #88AABB;
+}
+#behaviorTable table {
+	border: 1px solid #415361;
+	background: #D8E4EB;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#behaviorTable td {
+	padding: 4px 9px 4px 5px;
+}
+
+
+/* Setting Table 1
+---------------------------------------------------- */
+table.settingTable {
+	border: 1px solid #999999;
+	background: #FFFFFF;
+}
+table.settingTable td {
+	padding: 6px 5px 5px 5px;
+	border-right: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+	text-align: left;
+	background: #FFFFFF;
+}
+table.settingTable td.name {
+	background: #D8EBF9;
+}
+table.settingTable tr.headline th {
+	padding: 8px 10px;
+	color: #FFFFFF;
+	text-align: left;
+	background: #768E9D;
+}
+table.settingTable td.inbox {
+	padding: 16px;
+}
+
+/* Store Status Table
+---------------------------------------------------- */
+table.storeStatusTable {
+	border-right: 1px solid #B1B6D2;
+	border-left: 1px solid #B1B6D2;
+}
+table.storeStatusTable th,
+table.storeStatusTable td {
+	padding: 10px 8px;
+}
+table.storeStatusTable thead th {
+	padding: 10px 8px;
+	font-size: 10px;
+	vertical-align: top;
+	background: #CEE7FF;
+}
+table.storeStatusTable thead tr.subline th {
+	padding: 6px 8px;
+	font-weight: normal;
+	background: #C1D4DF;
+}
+table.storeStatusTable tbody th,
+table.storeStatusTable tbody td {
+	border-bottom: 1px solid #CAD0D5;
+}
+table.storeStatusTable tbody th {
+	font-weight: normal;
+	text-align: left;
+	background: #D8EBF9;
+}
+table.storeStatusTable tbody td {
+	text-align: center;
+}
+
+/* DetailTable
+---------------------------------------------------- */
+table.DetailTable {
+	border-right: 1px solid #B1C8D6;
+	border-left: 1px solid #B1C8D6;
+}
+table.DetailTable th {
+	padding: 10px 6px;
+	font-size: 10px;
+	vertical-align: top;
+	background: #CEE7FF;
+	border-top: 1px solid #B1C8D6;
+	border-bottom: 1px solid #B1C8D6;
+}
+table.DetailTable td {
+	padding: 10px 8px;
+	background: #FFFFFF;
+	border-top: 1px solid #B1C8D6;
+	border-bottom: 1px solid #B1C8D6;
+}
+table.DetailTable td.er {
+	padding: 10px 8px;
+	color: #FF0000;
+	border-top: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+}
+table.DetailTable td.foot {
+	padding: 10px 8px;
+	font-size: 10px;
+	text-align: center;
+	background: #CEE7FF;
+}
+
+
+/* Sub Table 1
+---------------------------------------------------- */
+table.subTable1 {
+	border: 1px solid #999999;
+}
+table.subTable1 th {
+	font-weight: normal;
+	color: #FFFFFF;
+	background: #768E9D;
+}
+table.subTable1 th,
+table.subTable1 td {
+	padding: 5px 14px;
+	line-height: 1.5;
+}
+
+/* Sub Table 2
+---------------------------------------------------- */
+table.subTable2 {
+	border: 1px solid #999999;
+	background: #B1C9D7;
+}
+table.subTable2 td {
+	padding: 6px 11px;
+}

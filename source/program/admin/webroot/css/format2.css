@@ -1,0 +1,220 @@
+@charset "Shift_JIS";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+
+/* CSS Reset Style
+---------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, label, fieldset, legend, input, textarea, button, p, blockquote, pre, address, table, th, td {
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #555555;
+	line-height: 1;
+	text-decoration: none;
+}
+
+body {
+	/*font-size: 78%;*/
+	font-size: 12px;
+}
+
+del { 
+    text-decoration: line-through;
+    font-weight: normal !important;
+}
+
+caption {
+	text-align: left;
+}
+
+fieldset {
+	border: 0;
+}
+
+button {
+	border: 0;
+	background: none;
+}
+
+label, legend {
+	line-height: normal;
+}
+
+/* HyperText Style
+---------------------------------------------------- */
+a:link {
+	color: #4883b4;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #4883b4;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #4883b4;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #4883b4;
+	text-decoration: none;
+}
+
+a:active {
+	color: #4883b4;
+	text-decoration: none;
+}
+
+/* Head Line
+---------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+/* Texts
+---------------------------------------------------- */
+p,td {
+	/*margin: 1em 0;*/
+	line-height: 1.4;
+}
+
+p.none {
+	margin: 0 !important;
+}
+
+.red {
+	color: #b10026;
+}
+
+.large {
+	font-size: 16px;
+}
+
+
+/* Quotations
+---------------------------------------------------- */
+blockquote {
+	padding: 20px;
+	margin: 30px 0;
+	line-height: 1.8;
+}
+
+/* Table
+---------------------------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td {
+	border-collapse: collapse;
+}
+
+table.zebra tr.even td {
+	background: #E9E9E9;
+}
+
+/* List Style
+----------------------------------------------------
+ul, ol {
+	margin: 1em 0;
+}
+
+ul.none, ol.none {
+	margin: 0 !important;
+}
+
+ul li,
+ol li {
+	margin: 0.1em 0 0.1em 2em;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+	margin: 0;
+}
+
+ul li,
+ol ul li {
+	list-style-type: disc;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+ol ol li {
+	list-style-type: lower-roman;
+}
+
+dl {
+	margin: 1em 0;
+}
+
+dd {
+	margin: 1em 0 0 2em;
+} */
+
+/* Image Style
+---------------------------------------------------- */
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+img.imgover {
+}
+
+/* Alignment
+---------------------------------------------------- */
+.left {
+	text-align: left !important;
+}
+.center {
+	text-align: center !important;
+}
+.right {
+	text-align: right !important;
+}
+
+/* Float Clear style
+---------------------------------------------------- */
+.clear {
+	clear: both !important;
+}
+.clearfix:after {
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	content: '[.]';
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac */
+
+/* DWデザインビュー用　clearfix指定箇所のレイアウト崩れ対策
+----------------------------------------------------
+.clearfix {
+	position: relative;
+} */

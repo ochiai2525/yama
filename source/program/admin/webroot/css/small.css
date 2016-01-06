@@ -1,0 +1,59 @@
+/* CSS Document */
+
+body {
+	font-size: 71%;
+}
+
+h4.bgTxt {
+	font-size: 100%;
+}
+
+.large {
+	font-size: 100%;
+}
+
+
+
+/* ADOBE READER style
+---------------------------------------------------- */
+div.adobeBox {
+	font-size: 10px;
+}
+
+/* rent style
+---------------------------------------------------- */
+.commentP {
+	font-size: 100%;
+}
+
+
+
+/* ボタンの表示状態
+--------------------*/
+/*カレント*/
+#fsmall a {
+	background-image: url(/img/btn_s_on.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#fmiddle a {
+	background-image: url(/img/btn_m.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#flarge a {
+	background-image: url(/img/btn_l.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*カレント
+#fsmall a:hover {
+	background-image: url(/img/btn_s_on.gif);
+}
+*/
+#fmiddle a:hover {
+	background-image: url(/img/btn_m_on.gif);
+}
+#flarge a:hover {
+	background-image: url(/img/btn_l_on.gif);
+}

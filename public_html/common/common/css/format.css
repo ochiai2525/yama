@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+/* *************************************
+
+概要：フォーマット用CSSファイル
+
+***************************************/
+
+
+/*  初期設定 */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color:#333333;
+}
+
+html,body{
+  height: 100%;
+}
+
+p,li,dt,dd {
+	line-height: 1.6;
+	color:#333333;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	border-style: none;
+}
+
+.clearfix:after{
+	content: ".";
+	height: 0;
+	display :block;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html.clearfix { height: 1%;}
+.clearfix {	display: block;}
+/* End hide from IE-mac */
+
+/* リンク設定 */
+
+a:link {
+	color:#037CA5;
+	text-decoration: none;
+	text-decoration: underline;
+}
+
+a:visited {
+	color:#037CA5;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ff9900;	
+	text-decoration: underline;
+}
+
+
+/* 全体構成 */
+
+body {
+	text-align: center;
+	background-color: #eee;
+}
+
+#container {
+	text-align: left;
+	margin: 0 auto;
+}
+
+/* mainvisual,keyvisual */
+
+#container div#keyvisual {
+}
+
+#container div#keyvisual p {
+}
+
+
+/* header */
+
+#container div#header {
+	width: 100%;
+	background: url(../../images/header_bg.jpg) repeat top left;
+}
+
+#container div#header div.inner {
+	width: 100%;
+	background: url(../../images/header_inner_bg.jpg) no-repeat center bottom;
+	
+}
+
+#container div#header h1,
+#container div#header p#logo {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+
+#container div#header div.inner div {
+	width: 906px;
+	margin: 0 auto;
+}
+
+#container div#header div.inner div#courtesy-navi {
+	margin:0;
+	padding:0;
+	float: left;
+	width: 258px;
+}
+
+#container div#header div.inner div#courtesy-navi p {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#container div#header div.inner div#courtesy-navi p img {
+	display: block;
+}
+
+
+#container div#header div.inner div#courtesy-navi input#btn {
+	margin-top:25px;
+	float: left;
+}
+
+*html #container div#header div.inner div#courtesy-navi input#btn {
+	margin-top:26px;
+	float: left;
+}
+
+#container div#header div.inner div#courtesy-navi span {
+	display: block;
+	width:138px;
+	float: left;
+	margin-top:24px;
+	padding: 3px 0 3px 12px;
+	background:url(../../images/top/header_seach_bg.jpg) no-repeat left;
+}
+
+
+
+#container div#header div.inner div#courtesy-navi span input {
+	padding: 0;
+	margin-right: 0;
+	display: block;
+	float: left;
+	line-height: 1.0;
+	font-size: 12px;
+	width:138px;
+	height: 15px;
+	border: none;
+	background: none;
+}
+
+/* globalnavi */
+
+#container div#globalnavi {
+	width: 100%;
+	background: url(../../images/globalnavi_bg.jpg) repeat-x top left; 
+}
+
+#container div#globalnavi div.inner{
+	width: 100%;
+	background: url(../../images/globalnavi_inner_bg.jpg) no-repeat center; 
+}
+
+#container div#globalnavi div ul {
+	width: 906px;
+	margin: 0 auto;
+	list-style-type: none;
+	padding: 0;
+}
+
+#container div#globalnavi div ul li {
+	float: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+#container div#globalnavi div ul img {
+	display: block;
+	vertical-align: bottom;
+}
+
+/* wrapper */
+#container #wrapper {
+	width: 100%;
+	background:url(../../images/content_bg.jpg) repeat-x top left;
+}
+
+/* content */
+
+#container #content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+/* パンくず */
+
+#container p#pankuzu {
+	width:900px;
+	padding: 30px 0 26px;
+	font-size: 75%;
+}
+
+
+/* main */
+
+#container #content #main {
+	width: 642px;
+	float: left;
+	padding: 0 26px 0 0;
+	background: url(../../images/border02.gif) repeat-y top right;
+	padding-bottom: 40px;
+}
+
+#container #content #main p#mainvisual {
+	margin:0;
+	padding:0;
+}
+
+#container #content #main p#mainvisual {
+	margin:0;
+	padding:0;
+}
+
+body#product #container #content #main p#mainvisual {
+	position: relative;
+	margin:0;
+	margin-top: -26px;
+	padding:0;
+}
+
+/* sub */
+#container #content div#sub {
+	float: right;
+	width: 214px;
+	margin: 0;
+	margin-left: -2px;
+	padding:0;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	
+	background: url(../../images/border02.gif) repeat-y top left;
+}
+
+#container #content div#sub div.category_list {
+	width: 214px;
+	background:url(../../images/sub_product_bg02.jpg) no-repeat left bottom;
+	padding-bottom:9px;
+}
+
+#container #content div#sub div.category_list ul {
+	padding: 0 10px;
+	background: url(../../images/sub_product_bg.jpg) repeat-y left ;
+	list-style-type:none;
+}
+
+#container #content div#sub div.category_list ul li {
+	padding: 6px 0;
+	background:url(../../images/border.gif) repeat-x bottom;
+	font-size:75%;
+}
+
+#container #content div#sub div.category_list ul li.end {
+	padding: 3px 0;
+	background: none;
+	font-size:75%;
+}
+
+#container #content div#sub div.category_list ul li a,
+#container #content div#sub div.category_list ul li em {
+	padding:0 0 6px 18px;
+	background:url(../../images/link_icon01.gif) no-repeat left 0.1em;	
+}
+
+#container #content div#sub div#contact {
+	margin-top: 15px;
+	padding-top:17px;
+	background: url(../../images/border03.gif) repeat-x top left;
+}
+
+#container #content div#sub div#contact address {
+
+	font-style: normal;
+	font-size:75%;
+	line-height:1.5;
+	margin-top:8px;
+}
+
+
+/* footer */
+
+#footer {
+	margin-top:40px;
+	width: 100%;
+	background: url(../../images/footer_bg.jpg) repeat-x top left;
+	border-top: 2px solid #8FD4D4;
+}
+
+#footer div.inner {
+	width: 100%;
+	background: url(../../images/footer_inner_bg.jpg) no-repeat center;
+	padding-bottom: 37px;
+}
+
+#footer div.inner ul {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+	list-style-type: none;
+}
+
+#footer div.inner ul li {
+	margin:0;
+	padding: 0;
+	float: left;
+}
+
+#footer div.inner ul li.pagetop {
+	margin:0;
+	margin-top:5px;
+	padding: 0;
+	float: right;
+}
+
+#footer div.inner div {
+	clear:both;
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#footer div.inner div address {
+	padding-top: 5px;
+	float: left;
+}
+
+#footer div.inner div p#copyright {
+	float:right;
+	margin-top:7px;
+}
+

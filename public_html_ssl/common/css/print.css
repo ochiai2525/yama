@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* *************************************
+
+概要：プリント用CSSファイル
+
+***************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    background-image: none;
+    font-size: 12.5pt;
+    line-height: 1.2;
+}
+
+*html body {
+	zoom: 75%; /*WinIE only */
+}
+
+#container #content #main{
+	width: 900px;
+	margin: 0 auto;
+}
+
+#container div#wrapper #content #main {
+	clear:both;
+}
+
+
+#footer {
+	width: 100%;
+	float:left;
+	padding-bottom: 20px;
+
+}
+
+#footer div#footernavi01 {
+	width: 100%;
+	border-top: 1px solid #f0f0f0;
+	background-color: #eee;
+}
+
+
+#footer div#footernavi02 {
+	width: 100%;
+	border-top: 1px solid #f0f0f0;
+}
+
+

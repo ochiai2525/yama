@@ -1,0 +1,11 @@
+■Apacheによるエイリアス設定
+・httpのalias
+alias /system /home/web/yamatame/source/program/system/webroot
+
+・httpsのalias
+alias /admin /home/web/yamatame/source/program/admin/webroot
+alias /system /home/web/yamatame/source/program/system_ssl/webroot
+
+■サーバリダイレクト設定
+・http
+wwwなし→wwwありへリダイレクト

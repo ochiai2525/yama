@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+
+/* CSS Import Style
+---------------------------------------------------- */
+@import "format2.css";
+@import "base.css";
+@import "buystyle.css";
+@import "sellstyle.css";
+@import "rentstyle.css";
+@import "assetplanningstyle.css";
+@import "corporatestyle.css";
+
+
+/* Second Style
+---------------------------------------------------- */
+.h2Box {
+	background: url(/img/bg_h2.jpg) repeat-x left top;
+	padding: 19px 0 38px;
+	text-align: center;
+}
+
+h2 {
+	width: 600px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+h3 {
+	margin-bottom: 33px;
+}
+
+.h3Contents {
+	margin: 30px 0 0;
+}
+
+.h3indexContents {
+	background: url(/img/bg_h3_boxB.gif) no-repeat left bottom;
+	padding-bottom: 23px;
+	margin-bottom: 30px;
+	clear: both;
+}
+
+.h3indexContents h3 {
+	margin-bottom: 0;
+}
+
+.h3indexContents .detailBox {
+	background: url(/img/bg_h3_boxM.gif) repeat-y left top;
+	padding: 0 15px 0 0;
+}
+
+.h3indexContents .icon {
+	float: left;
+	width: 167px;
+	padding: 0 15px;
+}
+
+.h3indexContents .detailP {
+	float: right;
+	width: 350px;
+}
+
+.h3indexContents a {
+	font-weight: bold;
+	border-top: 1px dashed #b4b1b2;
+	padding: 10px 0 0 0;
+	margin-top: 10px;
+	display: block;
+	text-align: right;
+}
+
+.h3indexContents a span {
+	background: url(/img/icon_arrow02.gif) no-repeat left top;
+	padding-left: 14px;
+}
+
+h4 {
+	margin: 30px 0 24px;
+}
+
+h4.bgTxt {
+	padding: 0 5px 15px;
+	margin: 30px 0 24px;
+	font-size: 18px;
+	font-weight: bold;
+	background: url(/img/bg_cttl_h4.gif) no-repeat left bottom;
+}
+
+.h4Contents {
+	margin: 24px 0 0;
+}
+
+p.subTtl {
+	color: #b10026;
+	font-weight: bold;
+	border-left: 3px solid #b10026;
+	padding-left: 8px;
+	margin-bottom: 8px;
+}
+
+
+div.pageTop {
+	clear: both;
+	text-align: right;
+	margin-top: 15px;
+}
+
+
+
+/* Table Style
+---------------------------------------------------- */
+.commonTbl {
+}
+
+.commonTbl th {
+	background-color: #efefef;
+	border: 1px solid #c5c5c5;
+	padding: 7px 10px;
+	text-align: center;
+}
+
+.commonTbl th.subHead {
+	background-color: #fff8da;
+	border: 1px solid #c5c5c5;
+	padding: 7px 10px;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.commonTbl td {
+	border: 1px solid #c5c5c5;
+	padding: 9px 10px;
+}
+
+.commonTblLeft td {
+	border: 1px solid #c5c5c5;
+	padding: 9px 10px;
+}
+
+.commonTblLeft th {
+	background-color: #efefef;
+	border: 1px solid #c5c5c5;
+	padding: 7px 10px;
+	text-align: left;
+}
+
+
+
+/* sideBar Style
+---------------------------------------------------- */
+#contentsNav {
+	margin: 20px 0 33px;
+}
+
+#contentsNav ul li {
+	list-style: none;
+	border-bottom: 1px solid #b4b1b2;
+	background: url(/img/bg_contentsLi.gif) no-repeat right top;
+	line-height: 20px;
+}
+
+#contentsNav ul li a {
+	text-decoration: none;
+	color: #434649;
+	padding: 12px 35px 8px 12px;
+	display: block;
+}
+
+#contentsNav ul li a img {
+	vertical-align: middle;
+}
+
+#localNav {
+	border: 4px solid #dddddd;
+	margin-top: 33px;
+}
+
+
+#localNav ul {
+	clear: both;
+}
+
+#localNav ul li {
+	clear: both;
+	padding: 2px 4px 2px 0;
+	border-bottom: 1px solid #b4b1b2;
+}
+
+#localNav ul li.bottom {
+	clear: both;
+	padding: 2px 4px 2px 0;
+	border-bottom: none;
+}
+
+#localNav ul li img.icon {
+	float: left;
+	width: 41px;
+}
+
+#localNav ul a {
+	float: right;
+	width: 110px;
+	display: block;
+	background: url(/img/icon_arrow01.gif) no-repeat left 6px;
+	padding: 5px 0 5px 14px;
+	line-height: 1.2;
+	vertical-align: middle;
+}
+
+#localNav ul a img {
+	margin-left: 3px;
+}
+
+
+
+/* news Style
+---------------------------------------------------- */
+body#news div.newsBox {
+	margin: 30px 0;
+}
+
+body#news div.newsBox dl.newsList dt {
+	float: left;
+	width: 7em;
+	clear: both;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	line-height: 1.4;
+}
+
+body#news div.newsBox dl.newsList dd {
+	line-height: 1.4;
+	padding-left: 8em;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #b9b9b9;
+}
+
+body#news div.newsBox dl.newsList dd a {
+	background: url(/img/icon_arrow02.gif) no-repeat left top;
+	padding-left: 15px;
+	display: block;
+}
+
+body#news div.newsBox dl.newsList dd a img {
+	margin-left: 3px;
+}
+
+
+

@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+
+/* Import Style
+---------------------------------------------------- */
+@import "format.css";
+@import "layout.css";
+
+
+/* Error Style
+---------------------------------------------------- */
+#flashMessage {
+	margin: 0;
+	padding: 0;
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.error_message {
+	margin: 0;
+	padding: 0;
+	color: #FF0000;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+div.error-message {
+	margin: 0;
+	padding: 0;
+	color: #FF0000;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+/* Login Style
+---------------------------------------------------- */
+#loginBox {
+	padding: 50px 0 100px 0;
+}
+
+#login div.head1 {
+	padding: 30px 0 0 0;
+	background: url(/admin//img/login_6.gif) left bottom no-repeat;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+#login {
+	width: 347px;
+	margin: 0 auto;
+	background: url(/admin//img/login_bg.gif) left bottom no-repeat;
+}
+
+#login div.form {
+	padding: 30px 0 0 0;
+	background: url(/admin//img/login_5.gif) top left repeat-y;
+	text-align: center;
+}
+
+#login div.form div#loginFalut {
+	margin: 0 0 10px 0;
+	text-align: center;
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#login div.form table {
+	margin: 0 auto;
+}
+
+#login div.form table td.error {
+	padding: 2px 0;
+	text-align: right;
+	color: #FF0000;
+}
+
+#login div.form table td.msg {
+	padding: 2px 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#login div.form input {
+	border: 1px solid #CCCCCC;
+}
+
+#login div#submit {
+	padding: 0 0 33px 0;
+	text-align: center;
+}
+
+
+/* Main Style
+---------------------------------------------------- */
+#mainContents {
+	margin: 15px;
+}
+
+#mainContents h4 span.must {
+	color: #FF0000;
+}
+
+#mainContents div.mcWrapper {
+	padding: 10px;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	line-height: 1.5;
+}
+
+#mainContents div.mcWrapper ul {
+	margin: 0;
+}
+
+#mainContents div.mcWrapper ul li {
+	margin: 0 0 0 1.5em;
+	line-height: 1.5;
+}
+
+#mainContents div.mcWrapper hr {
+	padding: 0;
+	margin: 5px 0;
+	*margin: 0;
+}
+
+#mainContents div.mcWrapper td {
+	text-align: left;
+}
+
+
+#mainContents p.confirm {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+
+/* Search Style
+---------------------------------------------------- */
+#searchBox {
+	padding: 5px;
+	border: 1px solid #999999;
+}
+
+.searchResult {
+	margin: 15px 0;
+}
+
+
+/* Submit Style
+---------------------------------------------------- */
+#mainContents div#submit {
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
+#mainContents #searchBox div#submit {
+	margin: 0;
+	text-align: right;
+}
+
+#mainContents div#submitL {
+	margin: 15px 0 0 0;
+}
+
+
+/* Table Style
+---------------------------------------------------- */
+table.findTable {
+	background: #999999;
+}
+
+table.findTable th,
+table.findTable td {
+	padding: 2px 10px;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+table.findTable th {
+	background: #CCE0EB;
+}
+
+table.findTable td.left {
+	text-align: left;
+}
+
+
+/* PopUp Style
+---------------------------------------------------- */
+div#popUp {
+	padding: 10px;
+	background: #FFFFFF;
+}
+
+div#popUp h3 {
+	text-align: left;
+}
+
+#popUp div.mcWrapper {
+	padding: 10px;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	line-height: 1.5;
+}
+
+#popUp div.mcWrapper ul {
+	margin: 0;
+}
+
+#popUp div.mcWrapper ul li {
+	margin: 0 0 0 1.5em;
+	line-height: 1.5;
+}
+
+#popUp div.mcWrapper hr {
+	padding: 0;
+	margin: 5px 0;
+	*margin: 0;
+}
+
+/* Step Style
+---------------------------------------------------- */
+table.step {
+	background: #999999;
+}
+
+table.step th,
+table.step td {
+	padding: 2px 10px;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+table.step th {
+	background: #CCFFFF;
+}
+
+table.step th.now {
+	background: #FFCC33;
+}
+
+table.step td.left {
+	text-align: left;
+}

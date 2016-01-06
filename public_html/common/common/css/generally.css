@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* *************************************
+
+概要：全般使用パーツ用CSSファイル
+
+***************************************/
+
+
+
+/* h1,2,3,4 */
+h1 {
+	margin-top: 15px;
+}
+
+#container #content #main h1 {
+	padding-top: 25px;
+
+}
+
+#container #content #main h1#mainvisual {
+	margin-top:0;
+	padding:0;
+}
+
+
+#container #content #main h2 {
+	margin-top: 25px;
+}
+
+#container #content #main h3 {
+	margin-top: 15px;
+	font-size:85%;
+}
+
+
+
+/* p */
+
+#container #content #main p {
+	margin-top: 10px;
+	font-size:75%;
+	line-height:1.7;
+}
+
+#container #content #main p.phot {
+	margin-top: 25px;
+	font-size:75%;
+	line-height:1.7;
+	text-align: center;
+}
+
+#container #content #main p.center {
+	width:100%;
+	text-align: center;
+}
+
+#container #content #main p.mt25 {
+	margin-top:25px;
+}
+
+/* table */
+
+#container #content #main table {
+	width:624px;
+	font-size:75%;
+	margin-top:15px;
+}
+
+#container #content #main table th {
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #999;
+	background: #BCBCBC;
+	color:#fff;
+}
+
+#container #content #main table td {
+	padding: 8px;
+	line-height:1.5;
+	border: 1px solid #999;
+}
+
+#container #content #main table td.center {
+	text-align: center;
+}

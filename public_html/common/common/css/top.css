@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* *************************************
+
+概要：トップページ用CSSファイル
+
+***************************************/
+
+/* container */
+
+#container {
+	text-align: left;
+	margin: 0 auto;
+}
+
+
+/* header */
+ 
+#top #container div#header {
+	width: 100%;
+	background: url(../../images/top/header_bg.jpg) repeat top left;
+}
+
+#top #container div#header div.inner {
+	width: 100%;
+	background: url(../../images/top/header_inner_bg.jpg) no-repeat center bottom;
+	
+}
+
+/* globalnavi */
+
+#top #container div#header div.inner ul#globalnavi {
+	width: 906px;
+	margin: 0 auto;
+	list-style-type: none;
+	padding: 0;
+}
+
+#top #container div#header div.inner ul#globalnavi li {
+	float: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+
+
+/* flasharea */
+
+#top #container #mainvisual {
+	margin:0;
+	padding:0;
+	width: 100%;	
+	background: url(../../images/top/flasharea_bg.jpg) repeat-x left bottom;
+}
+
+#top #container #mainvisual div.inner {
+	background: url(../../images/top/flasharea_inner_bg.jpg) no-repeat center bottom;	
+}
+
+#top #container #mainvisual div.inner div#flash {
+	width: 904px;
+	margin: 0 auto;
+}
+
+/* content */
+
+#top #container #content {
+	width: 860px;
+	margin: 0 auto;
+	padding: 0 20px;
+	border: none;
+}
+
+#top #container div#content div#wrapper{
+	padding-bottom:40px;
+	background: none;
+}
+
+
+
+/* column_right */
+
+#top #container #content div#column_right {
+	display: inline;
+	width: 262px;
+	margin: 0;
+	padding:0;
+	padding-bottom: 12px;
+	float: right;
+	background: url(../../images/top/index_clomn_right_bg01.gif) no-repeat bottom left;
+}
+
+#top #container #content div#column_right dl.info {
+	margin:0;
+	padding:0;
+	width: 260px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #fff url(../../images/top/index_clomn_right_bg02.jpg) no-repeat top left;
+}
+
+#top #container #content div#column_right dl.info dt {
+	background: url(../../images/link_icon01.gif) no-repeat 10px 0.8em;
+	padding: 5px 10px 0px 25px;
+	font-size: 75%;
+}
+
+#top #container #content div#column_right dl.info dd {
+	font-size: 75%;
+	margin: 0 10px;
+	padding: 0 0 5px;
+	background: url(../../images/border.gif) repeat-x bottom left;
+}
+
+
+#top #container #content div#column_right dl.info dd.end {
+	font-size: 75%;
+	margin: 0 10px;
+	padding: 0;
+	background: none;
+}
+
+
+/* main */
+
+#top #container #content #main {
+	display: inline;
+	width: 315px;
+	float: right;
+	padding: 0 20px;
+	margin-right: 20px;
+	padding-left: 2px;
+	background: url(../../images/border02.gif) repeat-y top left;
+	padding-bottom: 40px;
+}
+
+*html #top #container #content #main {
+	display: inline;
+	width: 315px;
+	float: right;
+	padding: 0;
+	margin-right: 15px;
+	padding-left: 2px;
+	background: url(../../images/border02.gif) repeat-y top left;
+	padding-bottom: 40px;
+}
+
+#top #container #content #main div#newsbar {
+	margin-top:14px;
+}
+
+#top #container #content #main div#newsbar h2,
+#top #container #content #main div#newsbar p {
+	float: left;
+	margin: 0;
+	padding:0;
+}
+
+#top #container div#content div#main dl.news {
+	padding-top: 12px;
+	margin-left:25px;
+	width: 315px;
+}
+
+
+#top #container div#content div#main dl.news dt {
+	padding: 7px 0 5px 15px;
+	font-size: 75%;
+	background: url(../../images/link_icon01.gif) no-repeat left center;
+}
+
+#top #container div#content div#main dl.news dd {
+	padding: 0 0 5px;
+	background: url(../../images/border.gif) repeat-x bottom left;
+	line-height: 1.5;
+	font-size: 75%;
+}
+
+#top #container div#content div#main dl.news dd a:link,
+#top #container div#content div#main dl.news dd a:visited {
+	color:#666;
+	text-decoration: underline;
+}
+
+#top #container div#content div#main dl.news dd a:hover {
+	color: #024c9f;
+	text-decoration: none;
+}
+
+/* column_left */
+
+#top #container #content div#column_left {
+	display: inline;
+	width: 202px;
+	margin-right:-2px;
+	padding:0;
+	padding-right:41px;
+	padding-bottom: 12px;
+	float: left;
+	background: url(../../images/border02.gif) repeat-y top right;
+}
+
+#top #container #content div#column_left h2 {
+	margin-bottom:10px;
+}
+
+#top #container #content div#column_left dl.category dt {
+	margin:0;
+	padding:0;
+}
+
+#top #container #content div#column_left dl.category dd {
+	margin:0;
+	padding: 2px 0;
+	line-height: 1.3;
+	font-size: 65%;
+}
+
+/* pickup */
+
+#top #container div#content div#pickup {
+	clear:both;
+	width: 868px;
+	border: 1px solid #ccc;
+	background: #f0f0f0;
+}
+
+#top #container div#content div#pickup div.inner {
+	margin:5px;
+	padding: 10px 15px 25px;
+	border: 1px solid #ccc;
+	background: #f0f0f0 url(../../images/top/index_pickup_bg01.jpg) repeat-x bottom left;
+}
+
+
+
+#top #container div#content div#pickup div.inner div {
+	float: left;
+	width: 255px;
+	margin: 15px 15px 0 0;
+}
+
+#top #container div#content div#pickup div.inner div  p {
+	float: left;
+	width: auto;
+	margin-top: 0;
+}
+
+#top #container div#content div#pickup div.inner div  p img {
+	display: block;
+	vertical-align: bottom;
+}
+
+#container div#content div#pickup div.inner div  dl {
+	float: right;
+	width: 125px;
+}
+
+#container div#content div#pickup div.inner div  dl dt {
+	line-height: 1.5;
+	font-size: 75%;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+#container div#content div#pickup div.inner div dl dt a:link,
+#container div#content div#pickup div.inner div dl dt a:visited {
+	padding-left: 12px;
+	background: url(../../images/link_icon02.gif) no-repeat left 0.2em;
+}
+
+#container div#content div#pickup div.inner div dl dd {
+	margin-top: 1px;
+	line-height: 1.5;
+	font-size: 65%;
+}

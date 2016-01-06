@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* ----------------------------------------------------------
+  Author : 仁川テニス
+  URI :
+  Version : 1.0
+  Last Up Date : 2008-11-24
+  Last Modified  : 2008-11-24
+  Copyright(C) itec hankyu-hanshin.
+---------------------------------------------------------- */
+
+table.searchConditionTable th {
+	background:#C1D4DF url(/hnt/admin/img/table/th_13.gif) repeat-x scroll left bottom;
+	border-right:1px solid #FFFFFF;
+	color:#FFFFFF;
+	padding:7px 8px;
+}
+
+table.dataListTable2 td.complete {
+	background: #CECECE;
+//	padding: 7px 8px;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+table.dataListTable2 td.process {
+	background: #FFCECE;
+//	padding: 7px 8px;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	vertical-align: top;
+}
+
+table.dataListTable2 th a {
+	color: black;
+}
+
+table.dataListTable2 td {
+	text-align: left;
+}
+
+table.dataListTable2 tfoot td {
+	text-align: center;
+}
+
+table.dataListTable2 tbody th {
+	width: 90px;
+}
+
+table.previewForm {
+	margin-left:auto;
+	margin-right:0px;
+}
+
+div.error-message {
+	color: #FF0000;
+}
+
+table.noborder td {
+	border-collapse: collapse;
+	border: 0px;
+}
+
+/* Page Nation2
+---------------------------------------------------- */
+table.pageNation2 {
+	width: 100%;
+	margin-top: 10px;
+}
+table.pageNation2 td {
+	line-height: normal;
+	text-align: right;
+}
+table.pageNation2 span,
+table.pageNation2 a.num {
+	padding: 2px 4px;
+	border: 1px solid #999999;
+	zoom: 100%;
+}
+table.pageNation2 span.current {
+	color: #FFFFFF;
+	background: #768E9D;
+}
+table.pageNation2 span {
+	background: #FFFFFF;
+}
+table.pageNation2 a.num {
+	color: #0E7FC7;
+	text-decoration: none;
+}
+table.pageNation2 a.num:hover {
+	background: #EEF4F9;
+}
+
+div.change_order_box {
+	width: 40px;
+}
+div.change_order_box div.button {
+	float: left;
+	width: 20px;
+}
+div.end {
+	clear: both;
+}
+
+/*
+.dataListTable2 img {
+    max-width: 190px;
+    max-height: 127px;
+}
+
+* html .dataListTable2 img {
+	width:expression(document.body.clientWidth > 190? “190px” : “auto);
+}
+*/
+
+/* 予約状況 */
+table.CalendarTable {
+	border: 1px solid #999999;
+	background: #999999;
+}
+table.CalendarTable caption {
+	font-size: 20px;
+}
+table.CalendarTable th {
+	width: 14%;
+	border-right: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+	font-size: 16px;
+	font-weight: bold;
+	background: #ECFFEC;
+}
+table.CalendarTable th.sunday {
+	background: #FFECEC;
+}
+table.CalendarTable th.saturday {
+	background: #ECECFF;
+}
+
+table.CalendarTable td {
+	padding: 4px;
+	border-right: 1px solid #CAD0D5;
+	border-bottom: 1px solid #CAD0D5;
+	height: 70px;
+	vertical-align: top;
+	text-align: left;
+	background: #FFFFFF;
+}
+table.CalendarTable td.rest {
+	background: #CECECE;
+}
+table.CalendarTable td div.day {
+	text-align: center;
+	font-size: 16px;
+}
+table.dataListTable2 td.sunday {
+	background: #FFECEC;
+}
+table.dataListTable2 td.saturday {
+	background: #ECECFF;
+}

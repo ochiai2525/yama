@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+/* *************************************
+
+概要：フォーマット用CSSファイル
+
+***************************************/
+
+
+/*  初期設定 */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color:#333333;
+}
+
+html, body, #wrap {height: 100%;}
+
+p,li,dt,dd {
+	line-height: 1.6;
+	color:#333333;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	border-style: none;
+}
+
+.clearfix:after{
+	content: ".";
+	height: 0;
+	display :block;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html.clearfix { height: 1%;}
+.clearfix {	display: block;}
+/* End hide from IE-mac */
+
+/* リンク設定 */
+
+a:link {
+	color:#037CA5;
+	text-decoration: none;
+	text-decoration: underline;
+}
+
+a:visited {
+	color:#037CA5;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ff9900;	
+	text-decoration: underline;
+}
+
+
+/* 全体構成 */
+
+body {
+	text-align: center;
+	background-color: #eee;
+}
+body > #wrap {
+		height: auto !important;
+		min-height: 100%;
+}
+
+#wrap {
+	position: relative;
+}
+
+
+#container {
+	text-align: left;
+	margin: 0 auto;
+	padding:0;
+	background-color: #eee;
+}
+
+
+/* header */
+
+#container div#header {
+	width: 100%;
+	background: url(../../images/header_bg01.jpg) repeat-x bottom left;
+	margin:0;
+	padding:0;
+}
+
+#container div#header div.inner {
+	width: 100%;
+	background: url(../../images/header_inner_bg01.jpg) no-repeat center bottom;
+	margin:0;
+	padding:0;
+
+}
+
+#container div#header div.inner div{
+	width:900px;
+	margin: 0 auto;
+}
+
+#container div#header p#logo {
+	padding: 0;
+	margin: 0;
+	line-height:0;
+}
+
+#container div#header p#logo img {
+	display: block;
+	vertical-align: bottom;
+}
+
+
+
+/* content */
+
+#container #content {
+	width: 100%;
+	background: url(../../images/content_bg01.jpg) repeat-x top left;
+	margin: 0;
+	padding:0;
+}
+
+/* main */
+#container #content #main {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+body#thanks #container #content #main {
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+#container #content #main h1 {
+	padding-top: 25px;
+}
+
+
+
+/* check */
+#container #content #main div#check {
+ text-align: center;
+}
+#container #content #main div#check p.check_radio {
+	font-size:100%;
+}
+
+/* p,address */
+#container #content #main p,
+#container #content #main address {
+	font-size: 75%;
+	font-style: normal;
+	line-height: 1.5;
+	margin-top:10px;
+}
+
+#container #content #main p.right {
+	text-align: right;
+}
+
+#container #content #main div#complete {
+	text-align: center;
+	margin-top:25px;
+}
+
+#container #content #main div#complete p {
+	font-size:85%;
+	margin-bottom:35px;
+}
+
+/* ul */
+#container #content #main ul {
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+#container #content #main ul li{
+	margin-top:5px;
+	line-height:1.5;
+	font-size:75%;
+}
+
+#container #content #main ul#attention li span {
+	color: #c30;
+}
+
+/* table */
+
+#container #content #main table {
+	width: 900px;
+	margin-top: 25px;
+}
+
+#container #content #main table th {
+	width:20%;
+	padding:15px 10px;
+	border: 1px solid #ccc;
+	background: #E4E4E4;
+	font-size:75%;
+}
+
+#container #content #main table th span {
+	color:#c30;
+}
+
+#container #content #main table td span.error_message {
+	display: block;
+	color:#c30;
+}
+
+#container #content #main table td {
+	padding:15px 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	font-size:75%;
+	line-height:2;
+}
+
+#container #content #main table td input {
+	width: 50px;
+}
+
+#container #content #main table td input.short {
+	width: 80px;
+}
+
+#container #content #main table td input.middle {
+	width: 120px;
+}
+
+#container #content #main table td input.long {
+	width: 500px;
+}
+
+#container #content #main table td textarea.comment {
+	width:99%;
+}
+
+
+
+
+/* footer */
+
+#footer {
+	position: relative;
+	height:	98px;
+	clear:both;
+	width: 100%;
+	background: url(../../images/footer_bg.jpg) repeat-x top left;
+	border-top: 2px solid #8FD4D4;
+}
+
+body#thanks #footer {
+	position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height:	98px;
+	clear:both;
+	width: 100%;
+	background: url(../../images/footer_bg.jpg) repeat-x top left;
+	border-top: 2px solid #8FD4D4;
+}
+
+#footer div.inner {
+	width: 100%;
+	background: url(../../images/footer_inner_bg.jpg) no-repeat center;
+	padding-bottom: 37px;
+}
+
+#footer div.inner ul {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+	list-style-type: none;
+}
+
+#footer div.inner ul li {
+	margin:0;
+	padding: 0;
+	float: left;
+}
+
+#footer div.inner ul li.pagetop {
+	margin:0;
+	margin-top:5px;
+	padding: 0;
+	float: right;
+}
+
+#footer div.inner div {
+	clear:both;
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+#footer div.inner div address {
+	float: left;
+}
+
+#footer div.inner div p#copyright {
+	float:right;
+}
+
+
+#footer {
+
+
