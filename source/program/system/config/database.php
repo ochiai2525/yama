@@ -80,15 +80,14 @@
  */
 class DATABASE_CONFIG {
 
-	var $default = array('driver' => 'postgres',
-								'connect' => 'pg_connect',
-								'persistent' => false,
-								'host' => '10.254.4.54',
-								'port' => '5432',
-								'login' => 'yamatame',
-								'password' => 'RyKBuz8e',
-								'database' => 'yamatame',
-								'prefix' => '',
-								'encoding' => 'utf-8');
+	var $default = array(
+		'driver' => 'mysql',           /* 使用するデータベース */
+		'connect' => 'mysql_connect',  /* 接続方法を指定します */
+		'host' => 'localhost',         /* 接続先ホスト */
+		'login' => 'yamatame',         /* データベースのユーザー */
+		'password' => 'RyKBuz8e',      /* パスワード */
+		'database' => 'yamatame',      /* データベース名 */
+		'prefix' => ''
+	);
 }
 ?>

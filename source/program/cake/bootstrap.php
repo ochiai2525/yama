@@ -44,7 +44,8 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 	}
 	require LIBS . 'cache.php';
 
-	Configure::getInstance();
+	$cfg = new Configure();
+	$cfg->getInstance();
 
 	$url = null;
 

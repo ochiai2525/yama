@@ -6,7 +6,7 @@
 <div id="courtesy-navi" class="clearfix">
 <p><img src="../images/top/header_seach.jpg" alt="サイト内検索" width="74" height="72" /></p>
 <form action="http://www.yamatame.com/search.html" id="cse-search-box">
-<input type="hidden" name="cx" value="003292670756214403748:8fueah3k3mw" />
+<input type="hidden" name="cx" value="014216636439543729317:yyuth2h9xyu" />
 <input type="hidden" name="cof" value="FORID:9" />
 <input type="hidden" name="ie" value="UTF-8" />
 <span>

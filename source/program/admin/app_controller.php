@@ -206,7 +206,8 @@ class AppController extends Controller {
 
 			// ssl_flagが有効でssl_actionsが指定なしか、ssl_actionsに含む場合httpsに変更
 	    	if( $ssl_flag && (empty($ssl_actions) || in_array($_url['action'], $ssl_actions))) {
-				$url = 'https://' . $_SERVER['HTTP_HOST'] . Router::url($url);
+				// さくらサーバではHTTPSでのアクセス時 $_SERVER['HTTP_HOST'] に www が省略されてしまうため www を補完する
+				$url = 'https://www.' . $_SERVER['HTTP_HOST'] . Router::url($url);
 	    	}
 		}
 		parent::redirect($url, $status);

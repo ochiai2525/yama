@@ -50,7 +50,7 @@ class Object {
  *
  * @return Object
  */
-	function Object() {
+	function __Object() {
 		$args = func_get_args();
 		if (method_exists($this, '__destruct')) {
 			register_shutdown_function (array(&$this, '__destruct'));

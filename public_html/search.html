@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
+<link rel="canonical" href="http://www.yamatame.com/search.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
@@ -48,15 +49,19 @@
 <p id="pankuzu"><a href="../index.html">HOME</a> &gt; 検索結果</p>
 <h1><img src="images/search/index.mainvisaul.jpg" alt="検索結果" width="899" height="137" /></h1>
 <div id="cse-search-results"></div>
-<script type="text/javascript">
-  var googleSearchIframeName = "cse-search-results";
-  var googleSearchFormName = "cse-search-box";
-  var googleSearchFrameWidth = 900;
-  var googleSearchDomain = "www.google.com";
-  var googleSearchPath = "/cse";
+<script>
+  (function() {
+    var cx = '014216636439543729317:yyuth2h9xyu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
-<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
-
+<gcse:searchresults-only></gcse:searchresults-only>
 </div>
 <!-- CONTENT END-->
 
