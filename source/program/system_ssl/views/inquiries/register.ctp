@@ -245,7 +245,11 @@
 		<input type="image" src="/images/index_btn01.jpg" class="rollover" alt="送信確認" name="confirm_img" id="confirm_img"/>
 	</p>
 </div>
-<p class="right"><script src=https://seal.verisign.com/getseal?host_name=www.yamatame.com&size=S&use_flash=YES&use_transparent=YES&lang=ja></script></p>
+<p class="right">
+<!-- GeoTrust QuickSSL [tm] Smart  Icon tag. Do not edit. --> <SCRIPT LANGUAGE="JavaScript"  TYPE="text/javascript" SRC="//smarticon.geotrust.com/si.js"></SCRIPT>
+<!-- end  GeoTrust Smart Icon tag -->
+<a href="https://www.geotrust.co.jp/ssl-certificate/" target="_blank"  style="color:#000000; text-decoration:none; font:bold 12px 'ＭＳ ゴシック',sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;"></a></td>
+</p>
 <p class="right">このページは、プライバシー保護のためSSL暗号化通信を採用しています。</p>
 <?php echo $form->end(); ?>
 </div>
