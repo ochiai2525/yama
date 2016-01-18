@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /admin
+
+# メンテナンス
+RewriteCond %{REQUEST_URI} !\.css$
+RewriteCond %{REQUEST_URI} !\.gif$
+RewriteCond %{REQUEST_URI} !\.ico$
+RewriteCond %{REQUEST_URI} !^maintenance/maintenance.html
+RewriteCond %{REMOTE_ADDR} !=116.58.177.39
+RewriteCond %{REQUEST_FILENAME} !503.php
+RewriteRule ^.*$ http://www.yamatame.com/maintenance/503.php [L,R]
+
+    # HTTPアクセスの場合は404とする
+    RewriteCond %{HTTP:X-Sakura-Forwarded-For} $^
+    RewriteRule ^.*$ - [R=404,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
