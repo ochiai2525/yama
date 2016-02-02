@@ -1,0 +1,311 @@
+@charset "utf-8";
+/*▼共通スタイル▼*/
+/*---------------------------------
+	CommonCSS [初期化,定義]
+---------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;padding:0;
+}
+img{border:0}
+/*---------------------------------
+	        Base CSS 
+---------------------------------*/
+a {
+	color:#36F;
+	text-decoration:none;
+}
+a:hover {
+	color:#039;
+	text-decoration:underline;
+}
+/* clearfix */
+.clearfix:after { content:"."; display:block; clear:both; height:0; visibility:hidden; }
+.clearfix { display:inline-block; }
+
+/* for macIE \*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+
+
+/*▼ポップアップウインドウのスタイル▼*/
+body#news_popup {
+	-webkit-text-size-adjust: none;
+	margin:10px;
+	padding:0;
+}
+body#news_popup h2 {
+	font-size:16px;
+	margin:0 0 5px;
+	color:#444;
+	border-bottom:1px dotted #999;
+	padding:5px 2px 1px;
+}
+#detailWrap {
+	padding:10px;
+	margin:0px;
+	color:#666;
+	font-size:15px;
+	line-height:140%;
+}
+#detailWrap ul,#detailWrap ol{
+	margin-left:20px;	
+}
+#detailWrap p{
+	padding:5px 0;
+}
+.detailPhoto{
+	margin:5px 0;	
+}
+#detailWrap a{
+	text-decoration:underline;
+}
+p.up_ymd {
+	font-size:13px;
+	margin:0px;
+	color:#666;
+	text-align:right;
+}
+.close_btn {
+	font-size:15px;
+	text-align:right;
+	padding-right:15px;
+}
+.close_btn a {
+	padding:2px 10px;
+	border:1px solid #aaa;
+	text-decoration:none;
+	color:#666;
+	border-radius:5px;
+}
+.close_btn a:hover {
+	background:#eee;
+}
+/*▲ポップアップウインドウのスタイル▲*/
+
+/*▼index.phpスタイル▼*/
+dl.news {
+	padding-top: 12px;
+	margin-left:25px;
+	width: 296px;
+}
+
+dl.news dt {
+	padding: 7px 0 5px 15px;
+	font-size: 75%;
+	background: url(../../images/link_icon01.gif) no-repeat left center;
+}
+
+dl.news dd {
+	padding: 0 0 5px;
+	background: url(../../images/border.gif) repeat-x bottom left;
+	line-height: 1.5;
+	font-size: 75%;
+}
+
+dl.news dd a:link,
+dl.news dd a:visited {
+	color:#666;
+	text-decoration: underline;
+}
+
+dl.news dd a:hover {
+	color: #024c9f;
+	text-decoration: none;
+}
+
+/*▲index.phpスタイル▲*/
+
+/*▼admin.phpスタイル▼*/
+body#news_admin p {
+	margin:0 0 5px;
+	line-height:130%;
+	font-size:13px;
+}
+body#news_admin #wrapper {
+	width:820px;
+	border: 1px solid #ccc;
+	border-top:0;
+	border-bottom:0;
+	box-shadow: 0 0px 7px #aaa;
+	margin:0 auto;
+	color:#666;
+	padding:5px 20px;
+	position:relative;
+}
+body#news_admin h1 {
+	font-size:18px;
+	color:#333;
+	margin:5px 0;
+	padding-left:5px;
+	border-left:5px solid #333;
+}
+body#news_admin h2 {
+	font-size:14px;
+	color:#fff;
+	margin-bottom:10px;
+	padding-left:5px;
+	background:#333;
+	padding:5px 8px 3px;
+	border-radius:3px;
+}
+body#news_admin #news_wrap {
+	width:820px;
+	height:150px;
+	overflow:auto;
+}
+body#news_admin ul#news_list {
+	margin:5px 0 0 0px;
+	padding:0;
+}
+body#news_admin ul#news_list li {
+	color:#666;
+	font-size:12px;
+	margin:0;
+	padding:1px 0 2px;
+	margin-bottom:1px;
+	border-bottom:1px dotted #ccc;
+	line-height:120%;
+	list-style-position:inside;
+}
+body#news_admin .list_title{
+	display:inline-block;
+	width:640px;
+	overflow:hidden;
+	vertical-align:middle;
+}
+body#news_admin form p {
+	border-bottom:1px dotted #ccc;
+	padding:5px 0;
+	margin-bottom:10px;
+}
+
+body#news_admin a.button{
+	font-size:12px;
+	cursor:pointer;
+	padding:2px 8px 1px;
+	margin:0px 0;
+	color:#555;
+	border:1px solid #aaa;
+	display:inline-block;
+	border-radius:3px;
+}
+body#news_admin a.button:hover{
+	background:#eee;
+	text-decoration:none;
+	color:#111;
+}
+body#news_admin .submit_btn {
+	width:240px;
+	height:30px;
+	cursor:pointer;
+}
+.fc_bbb, .fc_bbb a{
+	color:#bbb!important
+}
+.fc_red {
+	color:#F00!important
+}
+.message_com {
+	min-height:18px
+}
+.logout_btn {
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+.logout_btn a {
+	padding:2px 10px;
+	border:1px solid #aaa;
+	text-decoration:none;
+	color:#666;
+	font-size:13px;
+	border-radius:4px;
+}
+.logout_btn a:hover {
+	background:#eee;
+}
+#countTotal{
+	position:absolute;
+	right:20px;
+	top:35px;
+}
+/*　AuthPageStyle　*/
+body#auth{
+	margin-top:15px;	
+}
+body#auth #login_form{
+	width:500px;	
+	margin:25px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0px 7px #aaa;
+    font-weight: normal;
+    padding: 16px 16px 20px;
+	color:#666;
+	line-height:1.3;
+	font-size:90%;
+}
+body#auth form .input {
+    font-size: 20px;
+    margin:2px 6px 10px 0;
+    padding: 3px;
+    width: 97%;
+}
+body#auth input[type="text"], body#auth input[type="password"], body#auth input[type="file"], body#auth input[type="button"], body#auth input[type="submit"], body#auth input[type="reset"] {
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+}
+body#auth .button-primary {
+    border: 1px solid #000;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 3px 10px;
+	width:450px;
+	height:38px;
+}
+
+/*▲admin.phpスタイル▲*/
+
+/*---------------------------------
+         class Library
+---------------------------------*/
+/* Margin・padding class */
+.m0{margin:0!important}.mt5{margin-top:5px!important}.mt10{margin-top:10px!important}.mt15{margin-top:15px!important}.mt20{margin-top:20px!important}.mb5{margin-bottom:5px!important}.mb10{margin-bottom:10px!important}.mb15{margin-bottom:15px!important}.mb20{margin-bottom:20px!important}.mr5{margin-right:5px!important}.mr10{margin-right:10px!important}.mr15{margin-right:15px!important}.mr20{margin-right:20px!important}.ml5{margin-left:5px!important}.ml10{margin-left:10px!important}.ml15{margin-left:15px!important}.ml20{margin-left:20px!important}.pt5{padding-top:5px!important}.pt10{padding-top:10px!important}.pt15{padding-top:15px!important}.pb5{padding-bottom:5px!important}.pb10{padding-bottom:10px!important}.pb15{padding-bottom:15px!important}.pr5{padding-right:5px!important}.pr10{padding-right:10px!important}.pr15{padding-right:15px!important}.pl5{padding-left:5px!important}.pl10{padding-left:10px!important}.pl15{padding-left:15px!important}
+.pall5{padding:5px!important}.pall10{padding:10px!important}.pall15{padding:15px!important}
+/* /Margin・padding class */
+
+.clear {clear:both;}
+.taR {text-align:right!important;}
+.taL {text-align:left!important;}
+.taC {text-align:center!important}
+.big {font-size:170%!important;line-height:130%}
+/*Font color*/
+.bold {font-weight:bold!important;}
+.col1 {	color:#FF6600!important;}
+.col2 {	color:#FF9933!important}
+.col3 {	color:#FF3300!important;}
+.col4 {	color:#D9006C!important;}
+.col5 {	color:#669999!important}
+.col6 {	color:#0000CC!important}
+.col7 {	color:#000099!important}
+.col8 {	color:#0066FF!important}
+.col9 {	color:#333333!important}
+.col10 {color:#666666!important}
+.col11 {color:#009900!important}
+.col12 {color:#009900!important}
+.col13 {color:#996633!important}
+.col14 {color:#FF66CC!important}
+.col15 {color:#669900!important;}
+.col16 {color:#00CC99!important;}
+.col17 {color:#fff!important;}
+.col18{color:#009966!important}
+.col19{color:#F00!important}
+.floL {float:left;margin-top:0 !important;}
+.floR {float:right;margin-top:0 !important;}
+.light {font-weight:normal}
+.floL img{margin-right:10px;}
+.floR img{margin-left:10px;}
+/*---------------------------------
+         /class Library
+---------------------------------*/
