@@ -26,7 +26,7 @@ $lines_array[1] = ymd2format($lines_array[1]);//日付フォーマットの適�
 <title><?php	echo $lines_array[2];?></title>
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>   
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>   
 <script type="text/javascript">
  $(document).ready( function () {
  $("#detailWrap a").attr("target","_blank");//本文内のaタグに_blankを付与 ※変更可
